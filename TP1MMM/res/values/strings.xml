@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TP1MMM</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="clearchamps">RAZ fields</string>
+    <string name="addTel">Add TEL</string>
+</resources>

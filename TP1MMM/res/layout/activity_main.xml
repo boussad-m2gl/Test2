@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" 
+    android:id="@+id/mylayout"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="Nom" />
+
+    <EditText
+        android:id="@+id/editTextNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:text="prenom" />
+
+    <EditText
+        android:id="@+id/editTextPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/editTextNom"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/editTextPrenom"
+        android:ems="10"
+        android:inputType="text" />
+
+    <DatePicker
+        android:id="@+id/datePicker1"
+        android:layout_width="400px"
+        android:layout_height="200px"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/datePicker1"
+        android:layout_marginTop="32dp"
+        android:text="Ville" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/datePicker1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="14dp"
+        android:text="Date naissance" />
+
+    <TextView
+        android:id="@+id/textViewDptNaiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/editTextVille"
+        android:layout_marginTop="16dp"
+        android:text="Depat.Naiss" />
+
+    <Spinner
+        android:id="@+id/spinnerDpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewDptNaiss"
+        android:layout_marginLeft="34dp"
+        android:layout_toRightOf="@+id/textView3"
+        android:entries="@array/departement"
+         />
+
+    <Button
+        android:id="@+id/buttonValider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewDptNaiss"
+        android:layout_alignParentBottom="true"
+        android:text="Valider" 
+        android:onClick="onClick"
+        />
+    
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    
+    <string-array name="departement" >
+        <item>Ille et Vilaine</item>
+        <item>Loire Atlantique</item>
+        <item>Region parisiennne</item>
+        <item>Region de Nord</item>
+    </string-array>
+    
+</resources>
